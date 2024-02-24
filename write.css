@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    border: border-box;
+
+}
+.line-break2{
+    display: flex;
+    justify-content: center;
+}
+
+.line-break{
+    width: 90%;
+    height: 2px;
+    background-color: #0D1B2A;
+}
+
+
+
+body{
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #E0E1DD;
+}
+
+
+
+.header{
+    width: 100%;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #0D1B2A;
+}
+
+.header-logo img{
+    width: 200px;
+    height: 200px;
+    transition: all 0.3s ease;
+    padding-top: 10px;
+}
+
+.header-logo img:hover{
+    transform: scale(1.1);
+    
+}
+.logout-button button{
+    border-radius: 115px;
+    padding: 8px 15px;
+    margin-top: 70px;
+    font-size: 22px;
+    background-color: #415A77; /* Change the background color as needed */
+    color: #E0E1DD; /* Change the text color as needed */
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Add smooth transition */
+    margin-bottom: 100px;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+    
+}
+
+.logout-button button:hover{
+    transform: scale(1.05); /* Increase size on hover */
+    letter-spacing: 1px; /* Add a bit of spacing around the text on hover */
+    background-color: #415A77;
+    box-shadow: 5px 5px 25px #E0E1DD ;
+}
+.logout-button button a{
+    text-decoration: none;
+    color: white;
+}
+
+.create-Question{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 90px;
+    margin-top: 20px;
+}
+
+.create-Question h2{
+    font-size: 50px
+}
+
+.create-Question:hover{
+    color: #0D1B2A;
+}
+
+.middle-section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-left: 90px;
+    margin-top: 20px;
+}
+
+.middle-section:hover{
+    color: #0D1B2A; 
+
+}
+
+.middle-section input{
+    width:300px
+}
+
+.row-cols-4{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.col h2 {
+    
+    /* margin-left: 90px; */
+    margin-top: 20px;
+    font-weight: bolder;
+    transition: all 0.3s ease;
+}
+
+.col h2:hover{
+    color: #0D1B2A;
+    transform: scale(1.05);
+}
+
+.col input{
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding-left: 15px;
+    transition: all 0.3s ease;
+    border-radius: 115px;
+}
+
+.col input:hover {
+    box-shadow: 5px 5px black;
+    transform: scale(1.05);
+
+}
+
+.col input:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #3498db; /* Change the border color when focused if needed */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Add a subtle box shadow when focused */
+}
+
+
+
+select{
+    width: 350px;
+    height: 50px;
+    border-radius: 115px;
+    font-size: 30px;
+    text-align: center;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+
+select:hover {
+    border-color: #3498db; /* Change the border color on hover if needed */
+    box-shadow: 5px 5px black;
+    transform: scale(1.05);
+
+}
+
+select:focus {
+    border-color: #3498db; /* Change the border color on hover if needed */
+
+}
+
+.Description-middle{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Description-middle textarea{
+    border-radius: 20px;
+    width: 50%;
+    padding-top: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+    font-size: 25px;
+}
+
+.Description-middle h2{
+    font-weight: bolder;
+    
+}
+
+.Description-middle h2:hover{
+    color: #0D1B2A;
+    
+}
+.btn-middle{
+    display: flex;
+    
+    
+}
+
+.save-btn , .cancel-btn  {
+    border-radius: 115px;
+    transition: all 0.3s ease;
+    padding: 8px 15px;
+    margin-top: 50px;
+    font-size: 22px;
+    background-color: #415A77; /* Change the background color as needed */
+    color: white; /* Change the text color as needed */
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Add smooth transition */
+    /* margin-bottom: 100px; */
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+}
+
+.save-btn{
+    margin-right: 20px;
+}
+
+.save-btn:hover , .cancel-btn:hover{
+    
+    transform: scale(1.05); /* Increase size on hover */
+    letter-spacing: 1px; /* Add a bit of spacing around the text on hover */
+    box-shadow: 5px 5px black;
+    
+}
+
+.cancel-btn a{
+    color: #E0E1DD;
+    text-decoration: none;
+}
+    
+    
+#Description_input{
+    border: none;
+    box-shadow: 8px 8px black;
+}
+
+
+.question{
+    transition: all 0.3s ease;
+}
+.question:hover{
+    transform: scale(1.05);
+}

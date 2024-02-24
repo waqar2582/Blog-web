@@ -1,0 +1,183 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #E0E1DD;
+}
+.container {
+    position: relative;
+    width: 256px;
+    height: 256px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container span {
+    position: absolute;
+    left: 0;
+    width: 32px;
+    height: 6px;
+    background: #2c4766;
+    border-radius: 8px;
+    transform-origin: 128px;
+    transform: scale(2.2) rotate(calc(var(--i) * (360deg / 50)));
+    animation: animateBlink 3s linear infinite;
+    animation-delay: calc(var(--i) * (3s / 50));
+}
+@keyframes animateBlink {
+    0% {
+        background: #1B263B;
+    }
+    25% {
+        background: #778DA9;
+    }
+}
+.login-box {
+    position: absolute;
+    width: 400px;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #1B263B;
+    text-align: center;
+    font-weight: bolder;
+}
+.input-box {
+    position: relative;
+    margin: 25px 0;
+    width: 100%;
+    margin-left: 40px;
+    /* padding: 0 50px; */
+}
+.input-box input {
+    width: 20rem;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #2c4766;
+    outline: none;
+    border-radius: 40px;
+    font-size: 1.5em;
+    color: #1B263B;
+    font-weight: bolder;
+    padding: 0 20px;
+    transition: .5s ease;
+}
+.input-box input:focus,
+.input-box input:valid {
+    border-color: #1B263B;
+}
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    color: #1B263B;
+    pointer-events: none;
+    transition: .5s ease;
+}
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: 1px;
+    font-size: .8em;
+    background: #E0E1DD;
+    padding: 0 6px;
+    color: #1B263B;
+}
+.forgot-pass {
+    margin: -15px 0 10px;
+    text-align: center;
+}
+.forgot-pass a {
+    font-size: 1.2em;
+    color: #1B263B;
+    text-decoration: none;
+}
+.forgot-pass a:hover {
+    text-decoration: underline;
+}
+.btn {
+    width: 50%;
+    height: 45px;
+    margin-left: 100px;
+    background: #415A77;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1.4em;
+    color: #E0E1DD;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.btn a{
+    text-decoration: none;
+    color: #E0E1DD;
+}
+
+.btn:hover{
+    color: #E0E1DD;
+    background-color: #0D1B2A;
+}
+.signup-link {
+    margin: 20px 0 10px;
+    text-align: center;
+}
+.signup-link a {
+    font-size: 1.4em;
+    color: #1B263B;
+    text-decoration: none;
+    font-weight: 600;
+}
+.signup-link a:hover {
+    color: #415A77;
+}
+
+
+.logo-login img {
+    
+    height: auto; 
+    transition: all 0.3s ease; 
+  }
+  
+  .logo-login img:hover {
+    transform: scale(1.1); /* Increase size on hover */
+    
+}
+
+#Account{
+    color: #0D1B2A;
+    text-decoration: none;
+    margin-left: 115px;
+    font-size: 20px;
+}
+
+#Account:hover{
+    text-decoration: underline;
+}
+
+.Email-input{
+    box-shadow: 5px 5px black;
+}
+
+.password{
+    box-shadow: 5px 5px black;
+}
+
+#SignupBtn{
+    box-shadow: 5px 5px black;
+}

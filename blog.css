@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.header{
+    font-family: 'Bebas Neue', sans-serif;
+    height: 10vh;
+}
+
+.search input{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.login-Header button{
+    margin-top: 50px;
+
+}
+
+.login-Header button:hover{
+    box-shadow: 5px 5px 25px 11px;
+    
+    border: none;
+}
+
+.header_heading{
+    color: #E0E1DD;
+    font-weight: lighter;
+    font-size: 30px;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+}
+
+.header_heading a{
+    text-decoration: none;
+    color: #E0E1DD;
+    transition: transform 0.3s ease, color 0.3s ease, letter-spacing 0.3s ease;
+    
+}
+
+.header_heading a:hover{
+    transform: scale(1.1) ;/* Increase size on hover */
+    letter-spacing: 1px; /*Add a bit of spacing around the text on hover*/
+    filter: drop-shadow(2px 2px  white);
+    
+   
+    
+}
+
+.header-image{
+    margin-top: 40px;
+    margin-left: 10px;
+}
+.headerText{
+    color: #E0E1DD;
+}
+
+main {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+
+.middle-blog-content{
+    
+    margin-top: 50px;
+    width: 80%;
+    height: 50vh;
+    border-radius: 50px;
+    box-shadow: 10px 10px 0px 5px black;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    overflow: hidden; 
+    
+    /* transition: transform 0.3s ease, color 0.3s ease, letter-spacing 0.3s ease; */
+}
+/* .middle-blog-content:hover{
+    border: 2px solid #3498db;
+    
+    transform: scale(1.1) ;
+} */
+
+.Post-title {
+    text-align: center;
+    color: #0D1B2A;
+    font-size: 50px;
+    text-shadow: 10px 10px 0 #E0E1DD, -10px -10px 0 #E0E1DD, 10px -10px 0 #E0E1DD, -10px 10px 0 #E0E1DD;
+     /* Set the border properties as needed */
+    padding: 10px; /* Optional: Add padding for better appearance */
+    transition: transform 0.3s ease, color 0.3s ease, letter-spacing 0.3s ease;
+    
+    
+}
+
+.Post-title:hover{
+    
+    transform: scale(1) ;/* Increase size on hover */
+    letter-spacing: 1px; /*Add a bit of spacing around the text on hover*/
+    
+    
+}
+.Post-category{
+    text-align: right;
+    font-size: 30px;
+    color: #0D1B2A;
+    padding-right: 20px;
+    padding-top: 10px;
+    transition: transform 0.3s ease, color 0.3s ease, letter-spacing 0.3s ease;
+    
+}
+
+.Post-category:hover{
+    transform: scale(1) ;/* Increase size on hover */
+    letter-spacing: 1px; /* Add a bit of spacing around the text on hover */
+    
+}
+
+
+.Post-description{
+    text-align: left;
+    font-size: 25px;
+    color: #0D1B2A;
+    overflow: hidden;
+    padding: 20px; /* Optional: Add padding to prevent text from reaching the container edges */
+}
+
+.reply{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    
+}
+
+.reply textarea{
+    border-radius: 50px;
+    font-family: 'Bebas Neue', sans-serif;
+    width: 50%;
+    padding: 30px;
+    font-size: 20px;
+    transition: transform 0.9s ease, color 0.9s ease, letter-spacing 0.9s ease;
+    margin-bottom: 10px;
+    box-shadow: 8px 8px black;
+    
+}
+
+.reply textarea:hover{
+    transform: scale(1.1) ;
+}
+
+
+
+
+
+#replyBtn{
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: left;
+    border-radius: 115px;
+    padding: 8px 15px;
+    margin-left: 410px;
+    font-size: 22px;
+    background-color: #415A77; /* Change the background color as needed */
+    color: #E0E1DD; /* Change the text color as needed */
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Add smooth transition */
+    margin-top: 40px;
+    margin-bottom: 100px;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+}
+
+
+#replyBtn:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px  black ;
+}
+
+#CancelBtn{
+    font-family: 'Bebas Neue', sans-serif;
+    border-radius: 115px;
+    padding: 8px 15px;
+    margin-left: 10px;
+    font-size: 22px;
+    background-color: #415A77;
+    color: #E0E1DD; /* Change the text color as needed */
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Add smooth transition */
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+
+}
+
+#CancelBtn:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px  black ;
+}
+
+.ReplyUser{
+    border: 1px solid black;
+    width: 60%;
+    height: 100vh;
+    padding: 20px;
+
+}
+
+.replyContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+    
+    
+}
+
+.ReplyUser{
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    color: #0D1B2A;
+    box-shadow: 15px 15px black;
+    border-radius: 50px;
+    
+}
+
+.ReplyUser p{
+    padding-left: 10px;
+    padding-top: 10px ;
+}
+
+.ReplyUser button{
+    font-family: 'Bebas Neue', sans-serif;
+    border-radius: 115px;
+    padding: 8px 15px;
+    margin-left: 10px;
+    font-size: 22px;
+    background-color: #415A77;
+    color: #E0E1DD; /* Change the text color as needed */
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Add smooth transition */
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.ReplyUser button:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px  black ;
+}
+
+.goBack{
+    display: flex;
+    
+}
+
+.goback .fa-solid{
+    
+    font-size: 50px;
+}
+
+.fa-circle-arrow-left{
+    font-size: 50px;
+    padding-left: 300px;
+    padding-bottom: 50px;
+    color: #0D1B2A;
+    text-decoration: none;
+    transition: all 0.3s ease;
+   
+}
+
+.fa-circle-arrow-left:hover{
+   
+    transform: scale(1.05);
+}
+
+.replyHeading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.replyHeading h2{
+    font-size: 100px;
+    transition: all 0.3s ease;
+}
+
+.replyHeading h2:hover{
+    transform: scale(1.05);
+
+    
+}

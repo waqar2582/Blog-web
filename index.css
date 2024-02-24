@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #E0E1DD;
+    font-family: 'Bebas Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.line-break{
+    width: 100%;
+    height: 2px;
+    background-color: #0D1B2A;
+}
+
+.header-image img {
+    height: 100%;
+    width: 140px;
+    padding-bottom: 50px;
+    transition: all 0.3s ease; /* Add smooth transition */
+}
+  
+/* Hover effect for the header image */
+.header-image img:hover {
+    transform: scale(1.1); /* Increase size on hover */
+    
+}
+
+/* Style for the header container */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+    background-color: #0D1B2A;
+    padding-top: 30px;
+    
+}
+  
+  /* Style for the search div */
+.search {
+    flex-grow: 0.5; /* Takes most of the space */
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+  
+
+/* Style for the search input */
+.search input {
+    width: 100%;
+    padding: 8px;
+    padding-left: 18px;
+    border-radius: 115px;
+    font-size: 20px;
+    transition: all 0.3s ease; /* Add smooth transition */
+    margin-bottom: 100px;
+}
+  
+  /* Hover effect for the search input */
+.search input:hover {
+    border-color: #3498db; /* Change the border color on hover if needed */
+    box-shadow: 2px 2px 20px 2px #E0E1DD;
+}
+  
+  /* Focus effect for the search input */
+.search input:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #3498db; /* Change the border color when focused if needed */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Add a subtle box shadow when focused */
+    box-shadow: 2px 2px 20px 2px #E0E1DD;
+}
+  
+  /* Style for the search icon */
+.fa-magnifying-glass {
+    position: absolute;
+    right: 10px;
+    color: #555; /* Change the color as needed */
+    transition: all 0.3s ease; /* Add smooth transition */
+    margin-bottom: 100px;
+}
+  
+  /* Hover effect for the search icon */
+.search:hover .fa-magnifying-glass {
+    color: #3498db; /* Change the color on hover if needed */
+}
+  
+  
+  /* Style for the Write or Ask button */
+.writeAsk button {
+    padding: 8px 20px;
+      width: 150px;
+      height: 40px;
+      color: #fff;
+      font-weight: 700;
+      border-radius: 0;
+      text-transform: uppercase;
+      margin: 25px;
+      overflow: hidden;
+      position: relative;
+      /* border: none; */
+      border: 1px solid rgb(152, 152, 168);
+      background: #000;
+}
+
+.writeAsk a{
+    text-decoration: none;
+    color: #E0E1DD;
+    
+}
+  
+.writeAsk button:hover {
+     background: transparent;
+      /* color: white; */
+      box-shadow: 0 0 20px 5px #00fffc; 
+}
+  
+  /* Style for the Login button */
+.login-Header button {
+    padding: 8px 20px;
+      width: 150px;
+      height: 40px;
+      color: #fff;
+      font-weight: 700;
+      border-radius: 0;
+      text-transform: uppercase;
+      margin: 25px;
+      overflow: hidden;
+      position: relative;
+      /* border: none; */
+      border: 1px solid rgb(152, 152, 168);
+      background: #000;
+      /* font-style: italic; */
+}
+
+.login-Header a{
+    text-decoration: none;
+    color: #E0E1DD;
+}
+
+.login-Header button:hover {
+    background: transparent;
+      /* color: white; */
+      box-shadow: 0 0 20px 5px #00fffc; 
+}
+
+.search input:active{
+    transform: scale(1.05);
+}
+
+/* Styling for middle section container */
+
+.middle-section {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    height: 80vh;
+    width: 100%;
+    background-color: #E0E1DD;
+}
+
+/* Styling for box 1 -- Standard / Threshold */
+  
+.middle-section .box1 {
+    margin-top: 30px;
+    margin-left: 50px;
+    height: 300px;
+    width: 1300px;
+    border: none;
+    background-color: #f4f5f1;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.7s ease; /* Add scaling transition */
+    border: 1px solid black;
+    padding: 10px;
+    padding-bottom: 10px;
+    box-shadow: 8px 8px black;
+    
+    
+}
+
+.box1:hover{
+    cursor: pointer;
+    box-shadow: 8px 8px black;
+}
+
+.delete-btn{
+    width: 80px;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    border-radius: 115px;
+    background-color: #415A77;
+    font-weight: bolder;
+    color: #E0E1DD;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+    transition: all 0.3s ease;
+}
+
+.delete-btn:hover{
+    box-shadow: 5px 5px  black ;
+    transform: scale(1.05);
+}
+
+
+.box1 #container #Heading-post{
+    font-size: 40px;
+    color: #0D1B2A;
+    /* text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000; */
+    
+}
+
+#container {
+    max-width: 2000px; /* Adjust this value according to your layout */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.box1 #container #Category{
+    font-size: 20px;
+    text-align: right;
+    color: #0D1B2A;
+    /* text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000; */
+    letter-spacing: 2px;
+    
+}
+
+.box1 #container .reply-btn{
+    width: 80px;
+    height: 40px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 115px;
+    background-color: #183642;
+    color: white;
+    transition: all 0.3s ease;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.reply-btn:hover{
+    box-shadow: 5px 5px  black ;
+    transform: scale(1.05);
+    
+}
+
+.box1 #container #description{
+    word-wrap: break-word; /* Wrap long words to the next line */
+    overflow: hidden; /* Hide overflowing content */
+    text-overflow: ellipsis; /* Display an ellipsis (...) to indicate text overflow */
+    
+    /* text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000; */
+}
+
+.middle-section .box1:hover {
+    transform: scale(1.05); /* Increase size on hover */
+    border: 3px solid #0D1B2A;
+}
+
+.middle-section .box1 .box1-text {
+    width: 70%;
+    margin: 15px;
+    margin-top: 10px;
+    transition: color 0.3s ease, letter-spacing 0.3s ease; /* Add color and letter-spacing transition */
+}
+  
+.middle-section .box1:hover .box1-text {
+    color: #0D1B2A; /* Change text color on hover */
+    
+}
+
+.middle-section .box1 .box1-image{
+    width: 20%;
+    height: auto;
+    background-image: url(assets/vs.png);
+    border-radius: 15px;
+    background-size: cover;
+    margin: 5px;
+    border: 1px solid black;
+}
+
+    
+.box1-text h2{
+    font-size: 3rem;
+}
+
+.box1-text p{
+    font-size: 1rem;
+}
+
+.footer-text{
+    display: flex;
+    justify-content: space-between;
+}
+.box2-text-footer-left{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px ;
+}
+
+.box2-text-footer-left p{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.fa-solid{
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.box2-text-footer-right p{
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.box2-image{
+    background-image: url(assets/robot.png);
+    width: 20%;
+    border-radius: 15px;
+    height: auto;
+    background-size: cover;
+    margin: 5px;
+    border: 1px solid black;
+}
+
+.box4-image{
+    background-image: url(assets/future_of_web_design.jpg);
+    border-radius: 15px;
+    width: 20%;
+    height: auto;
+    background-size: cover;
+    margin: 5px;
+    border: 1px solid black;
+}
+
+
+.box-image{
+    background-image: url(assets/img\ middle.png);
+    border-radius: 15px;
+    width: 20%;
+    height: auto;
+    background-size: cover;
+    margin: 5px;
+    border: 1px solid black;
+}
+
+
+
+.middle-section .box4 {
+    margin-top: 30px;
+    margin-left: 50px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: #E0E1DD;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    transition: transform 0.3s ease; /* Add scaling transition */
+
+    margin-bottom: 30px;
+}
+  
+.middle-section .box4:hover {
+    transform: scale(1.05); /* Increase size on hover */
+    border: 3px solid #0D1B2A;
+}
+
+.middle-section .box4 .box1-text {
+    width: 70%;
+    margin: 15px;
+    margin-top: 10px;
+    transition: color 0.3s ease, letter-spacing 0.3s ease; /* Add color and letter-spacing transition */
+}
+  
+.middle-section .box4:hover .box1-text {
+    color: #0D1B2A; /* Change text color on hover */
+    
+}
+
+
+
+.tech-crunch-footer {
+    background-color: #0D1B2A;
+    color: #fff;
+    padding: 5px;
+    width: 100%;
+    margin-top: 20px;
+    
+  }
+  
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.footer-logo img {
+    width: 150px;
+}
+  
+.footer-links a {
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+    transition: transform 0.3s ease, color 0.3s ease, letter-spacing 0.3s ease;
+}
+  
+.footer-links a:hover{
+    transform: scale(1.1) ;/* Increase size on hover */
+    letter-spacing: 1px; /* Add a bit of spacing around the text on hover */
+    color: #E0E1DD;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 20px;
+    transition: transform 0.3s ease, color 0.3s ease, letter-spacing 0.3s ease;
+    
+    
+}
+
+.copyright:hover{
+    color: #E0E1DD;
+    
+}
+  
+.footer-logo img {
+    height: 150px;
+    width: 150px;
+    transition: all 0.3s ease; /* Add smooth transition */
+}
+  
+  /* Hover effect for the header image */
+.footer-logo img:hover {
+    transform: scale(1.1); /* Increase size on hover */
+}
